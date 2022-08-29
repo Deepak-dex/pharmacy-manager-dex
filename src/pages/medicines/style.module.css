@@ -1,0 +1,79 @@
+.heading{
+    margin: 1em 0.7em;
+    margin-bottom: 0em;
+    color: #7a857af5;
+}
+.add_container{
+    display: flex;
+    justify-content: end;
+    margin-right: 1em;
+}
+.add_btn{
+    padding: 0.6em 1.7em;
+    padding-left: 1.3em ;
+    border: 1px solid green;
+    color: green;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add_btn:hover{
+    color: white;
+    background: #2abb2ade;    
+    border-color: white;
+}
+
+.add_icon{
+    margin-right: 0.3em;
+}
+
+.table{
+    height: 79%;
+    margin: 0.8em;
+}
+
+.edit{
+    color: green;
+    margin-right: 0.6em;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+.delete{
+    color: red;
+    cursor: pointer;
+}
+
+.close{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-left: 2em;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.close>span{
+    margin-top: 0.3em;
+    margin-right: 0.7em;
+    font-size: 2em;
+    font-weight: 550;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.form{
+    padding: 2em 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em 4em;
+}
+
+.save{
+    padding: 0.6em 1.7em;
+    background-color: green;
+    color: honeydew;
+    text-align: center;
+    cursor: pointer;
+}

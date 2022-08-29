@@ -1,0 +1,54 @@
+.heading{
+    margin: 1em 0.7em;
+    color: #7a857af5;
+}
+
+.chart_container{
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0em;
+}
+
+.chart{
+    width: 45%;
+    padding: 1em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.sales_container{
+    width: 95%;
+    margin: auto;
+}
+
+.summary{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.summary  h4{
+    color: rgb(124, 122, 122);
+
+}
+
+.detail_container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.detail_container > h4{
+    font-size: 1rem;
+    margin-bottom: 1em;
+    color: rgb(124, 122, 122);
+}
+
+.detail{
+    display: flex;  
+}
+
+.detail > div{
+    margin-right: 1em;
+}

@@ -1,0 +1,87 @@
+.sidebar{
+    flex: 1;
+    height: 100vh ;
+    background: #05b7e14d;
+    position: sticky;
+    top: 0px;
+}
+
+.logo{
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1em;
+    padding: 1em 0px;
+}
+
+.sidebar_menu{
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.sidebar_menu>h3{
+    font-size: 13px;
+    text-align: left;
+    color: rgb(138, 136, 136);
+}
+
+.sidebar_menu>ul{
+    list-style: none;
+    color: rgb(75, 74, 74);
+    padding: 5px;
+}
+
+.sidebar_menu>ul>li{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sidebar_menu>ul>a{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px 0px;
+    font-weight: bold;
+    border-radius: 8px 0px 0px 8px;
+    cursor: pointer;
+    text-decoration: none
+}
+a{
+    color: rgb(75, 74, 74);
+}
+
+.sidebar_menu>ul>a:hover{
+    color: #1E1E1E;
+    background: #05B7E1;
+}
+
+.active {
+    color: #302D3B;
+    background: #05B7E1;
+}
+
+.icon{
+    margin-right: 5px;
+    font-size: 20px !important;
+}
+
+.logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7em;
+    font-weight: bold;
+    width: 94%;
+    margin-top: 30vh;
+    border-radius: 10px;
+    color: #05B7E1;
+    background-color: honeydew;
+    cursor: pointer;    
+}
+.logout:hover{
+    color: aliceblue;
+    background-color: #05B7E1;
+}
