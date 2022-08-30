@@ -96,7 +96,7 @@ export default function Medicines() {
             headers: { "accepts":"application/json" , 'Content-Type': 'application/json' , 'authToken': JSON.parse(localStorage.getItem("token"))},
             method: 'GET',
         };
-         response = await fetch("/api/medicine", requestOptions);
+         response = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/medicine", requestOptions);
          console.log('get')
         }
 
@@ -106,7 +106,7 @@ export default function Medicines() {
           method: 'POST',
           body: JSON.stringify({ name: name, price: price, quantity:quantity, expiry: selectedDate })
           };
-          response = await fetch("/api/medicine/add",requestOptions);
+          response = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/medicine/add",requestOptions);
         }
 
         if (ar === 'update'){
@@ -115,7 +115,7 @@ export default function Medicines() {
               method: 'POST',
               body: JSON.stringify({_id:id , name: name, price: price, quantity:quantity, expiry: selectedDate })
           };
-          response = await fetch("/api/medicine/update",requestOptions);
+          response = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/medicine/update",requestOptions);
         }
         if (ar === 'delete'){
           const requestOptions = {
@@ -127,7 +127,7 @@ export default function Medicines() {
             setisloading(false)
             return
           }
-        response = await fetch("/api/medicine/delete",requestOptions);
+        response = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/medicine/delete",requestOptions);
         console.log("yaha se chala voh",id)
       
         }

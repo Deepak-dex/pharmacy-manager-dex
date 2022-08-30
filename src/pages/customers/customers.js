@@ -89,7 +89,7 @@ export default function Customers() {
             headers: { "accepts":"application/json" , 'Content-Type': 'application/json' , 'authToken': JSON.parse(localStorage.getItem("token"))},
             method: 'GET',
         };
-         response = await fetch("/api/customer", requestOptions);
+         response = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/customer", requestOptions);
         }
 
         if (clickHandler === 'update'){
@@ -98,7 +98,7 @@ export default function Customers() {
               method: 'POST',
               body: JSON.stringify({_id:id , name: name, phone: phone, email:email})
           };
-          response = await fetch("/api/customer/update",requestOptions);
+          response = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/customer/update",requestOptions);
         }
         if (clickHandler === 'delete'){
           const requestOptions = {
@@ -106,7 +106,7 @@ export default function Customers() {
             method: 'DELETE',
             body: JSON.stringify({_id:id })
           };
-         response = await fetch("/api/customer/delete",requestOptions);
+         response = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/customer/delete",requestOptions);
          console.log("yaha se chala voh",id)
         }
 

@@ -24,7 +24,7 @@ export default function Sales() {
         const requestOptions = {
           headers: { "accepts":"application/json" , 'Content-Type': 'application/json' , 'authToken': JSON.parse(localStorage.getItem("token"))},
           method: 'GET'};
-      let response = await fetch("/api/sale", requestOptions);
+      let response = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/sale", requestOptions);
       response = await response.json()
       console.log("response",response)
       let rows = []

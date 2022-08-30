@@ -38,11 +38,11 @@ export default function Home() {
                 method: 'GET'
             };
 
-            let salesResponse = await fetch("/api/sale", requestOptions);
+            let salesResponse = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/sale", requestOptions);
             salesResponse = await salesResponse.json()  
             setsales(salesResponse)
             
-            let responseM = await fetch("/api/medicine", requestOptions);
+            let responseM = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/medicine", requestOptions);
             responseM = await responseM.json()
             setmedicine(responseM)
             settotalmed( responseM.length)

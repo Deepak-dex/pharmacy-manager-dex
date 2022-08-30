@@ -25,7 +25,7 @@ export default function Billing() {
                 method: 'GET',
             };
 
-            let response = await fetch("/api/medicine/", requestOptions);
+            let response = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/medicine/", requestOptions);
 
             response = await response.json()
             console.log("response",response)
@@ -88,7 +88,7 @@ export default function Billing() {
           body: JSON.stringify({ name: name, email: email, phone:phone })
         };
 
-        let CustomerResponse = await fetch("/api/customer/add", customerRequestOptions);
+        let CustomerResponse = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/customer/add", customerRequestOptions);
         CustomerResponse = CustomerResponse.json
         console.log(CustomerResponse)
 
@@ -106,7 +106,7 @@ export default function Billing() {
           body: JSON.stringify({ name:name, phone:phone, orders:ord, ordersTotal:ordersTotal })
         };
         console.log('name:',name, 'phone:',phone, 'orders:',ord, 'ordersTotal:',ordersTotal )
-        let response = await fetch("/api/sale/add", requestOptions);
+        let response = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/sale/add", requestOptions);
         response = response.json
         console.log(response)
 

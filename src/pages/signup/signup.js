@@ -22,7 +22,7 @@ export default function Signup() {
             mode: 'cors',
             body: JSON.stringify({ name: name, email:email, password:password })
         };
-        let response = await fetch("/api/user/register",requestOptions)
+        let response = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/user/register",requestOptions)
         console.log(response)
         history.push('/signin')
         }else{

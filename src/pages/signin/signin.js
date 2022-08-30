@@ -28,7 +28,7 @@ export default function Signin() {
             mode: 'cors',
             body: JSON.stringify({ email:email, password:password})
         };
-        let response = await fetch("/api/user/login",requestOptions)
+        let response = await fetch("https://pharmacy-backend-dex.herokuapp.com/api/user/login",requestOptions)
         console.log(response)
         response = await response.json()
         console.log(response)
